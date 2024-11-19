@@ -363,6 +363,8 @@ class PrimeNumbersPainter extends CustomPainter {
       ..color = Colors.white.withOpacity(0.1)
       ..style = PaintingStyle.fill;
 
+    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), paint);
+
     for (var i = 0; i < numbers.length; i++) {
       final x = (i % 5) * (size.width / 5);
       final y = (i ~/ 5) * (size.height / 4);
